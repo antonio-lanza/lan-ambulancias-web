@@ -143,7 +143,7 @@ export function LazyVideo({
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={poster}
-            alt=""
+            alt={`Capa do depoimento: ${title}`}
             className="absolute inset-0 z-[1] h-full w-full object-cover"
             style={{ objectPosition }}
           />

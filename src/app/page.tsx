@@ -1,5 +1,6 @@
 import { ContactCTA } from "@/components/ContactCTA";
 import { Equipe } from "@/components/Equipe";
+import { Faq } from "@/components/Faq";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
@@ -17,6 +18,7 @@ export default function HomePage() {
         <Services />
         <Testimonials />
         <Equipe />
+        <Faq />
         <ContactCTA />
       </main>
       <Footer />
