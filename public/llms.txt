@@ -1,0 +1,27 @@
+# LAN Ambulâncias 24h
+
+> Ambulância, remoção e UTI móvel com base em Criciúma e atendimento em todo Santa Catarina.
+
+## Entidade
+- Nome: LAN Ambulâncias 24h
+- Registro: CRM/SC 4944
+- Diretor Técnico Médico: Dr. Douglas Gobbo Pierini, CRM/SC 24671
+- Cidade-base: Criciúma, SC, Brasil
+- Área de atendimento: Estado de Santa Catarina
+- Horário: 24 horas, todos os dias
+
+## Contato
+- Telefone principal: (48) 99979-9668
+- Telefone secundário: (48) 3462-9255
+- WhatsApp: (48) 99979-9668
+
+## Serviços
+- Remoções de pacientes
+- Transferência inter-hospitalar com UTI móvel adulto, pediátrica e neonatal
+- Suporte básico
+- Cobertura de eventos
+- Plano empresarial Área Protegida
+- Locação de ambulâncias (diária, mensal ou anual)
+
+## Site
+- URL canônica: https://lanambulancias.com.br

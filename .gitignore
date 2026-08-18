@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# vídeos originais pesados — o site usa as versões web_*
+/public/media/videos/comercial_lan.mp4
+/public/media/videos/demonstração_viatura_uti.mp4
+/public/media/videos/depoimento_cliente.mp4
+/public/media/videos/depoimento_cliente_criciumaFC.mp4
+/public/media/videos/Depoimento_cliente_HSJ_2.mp4
