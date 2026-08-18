@@ -19,7 +19,6 @@ export function Faq() {
             <Reveal key={item.q} delay={i * 0.05}>
               <details
                 className="group overflow-hidden rounded-2xl border border-line bg-white transition-[border-color,box-shadow] open:border-green/35 open:shadow-[0_16px_40px_rgba(5,53,8,0.08)]"
-                open={i === 0}
               >
                 <summary className="flex cursor-pointer list-none items-start justify-between gap-4 px-5 py-4 marker:content-none [&::-webkit-details-marker]:hidden md:px-6 md:py-5">
                   <span className="font-display text-base font-bold leading-snug text-ink md:text-lg">
