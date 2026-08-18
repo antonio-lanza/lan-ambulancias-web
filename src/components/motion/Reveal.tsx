@@ -10,10 +10,17 @@ type Props = {
   children: React.ReactNode;
   className?: string;
   delay?: number;
-  y?: number;
+  duration?: number;
+  ease?: string;
 };
 
-export function Reveal({ children, className = "", delay = 0, y = 36 }: Props) {
+export function Reveal({
+  children,
+  className = "",
+  delay = 0,
+  duration = 0.85,
+  ease = "power2.out",
+}: Props) {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -23,34 +30,28 @@ export function Reveal({ children, className = "", delay = 0, y = 36 }: Props) {
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduce) {
       el.style.opacity = "1";
-      el.style.transform = "none";
+      el.style.visibility = "visible";
       return;
     }
 
     const ctx = gsap.context(() => {
-      gsap.fromTo(
-        el,
-        { autoAlpha: 0, y },
-        {
-          autoAlpha: 1,
-          y: 0,
-          duration: 0.9,
-          delay,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: el,
-            start: "top 88%",
-            once: true,
-          },
-          onComplete: () => {
-            el.style.willChange = "auto";
-          },
+      gsap.set(el, { autoAlpha: 0 });
+
+      gsap.to(el, {
+        autoAlpha: 1,
+        duration,
+        delay,
+        ease,
+        scrollTrigger: {
+          trigger: el,
+          start: "top 88%",
+          once: true,
         },
-      );
+      });
     }, el);
 
     return () => ctx.revert();
-  }, [delay, y]);
+  }, [delay, duration, ease]);
 
   return (
     <div ref={ref} className={`reveal ${className}`}>

@@ -107,7 +107,7 @@ export function Services() {
             const photoRight = i % 2 === 1;
 
             return (
-              <Reveal key={service.id} delay={i * 0.08} y={48}>
+              <Reveal key={service.id} delay={i * 0.08}>
               <article
                 className="overflow-hidden rounded-2xl border border-line bg-white shadow-[0_16px_40px_rgba(5,53,8,0.08)] lg:grid lg:grid-cols-2 lg:items-stretch"
               >
@@ -164,7 +164,7 @@ export function Services() {
           })}
         </div>
 
-        <Reveal y={28}>
+        <Reveal>
         <div className="mt-14 overflow-hidden rounded-2xl bg-forest text-white md:mt-16">
           <div className="grid md:grid-cols-3 md:divide-x md:divide-white/15">
             {serviceProof.map((line) => (

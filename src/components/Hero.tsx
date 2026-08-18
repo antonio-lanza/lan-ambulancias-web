@@ -16,21 +16,19 @@ export function Hero() {
     if (reduce || !root.current) return;
 
     const tl = createTimeline({ defaults: { ease: "out(3)" } });
-    tl.add(".js-hero-logo", { opacity: [0, 1], translateY: [10, 0], duration: 500 }, 0)
-      .add(".js-hero-title", { opacity: [0, 1], translateY: [12, 0], duration: 600 }, 50)
-      .add(".js-hero-sub", { opacity: [0, 1], translateY: [10, 0], duration: 500 }, 110)
-      .add(".js-hero-cta", { opacity: [0, 1], translateY: [8, 0], duration: 450 }, 160)
+    tl.add(".js-hero-title", { opacity: [0, 1], duration: 600 }, 0)
+      .add(".js-hero-sub", { opacity: [0, 1], duration: 500 }, 80)
+      .add(".js-hero-cta", { opacity: [0, 1], duration: 450 }, 140)
       .add(".js-hero-ambulance", { opacity: [0, 1], duration: 650 }, 40);
 
     return () => {
       tl.cancel();
       root.current
         ?.querySelectorAll<HTMLElement>(
-          ".js-hero-logo, .js-hero-title, .js-hero-sub, .js-hero-cta, .js-hero-ambulance",
+          ".js-hero-title, .js-hero-sub, .js-hero-cta, .js-hero-ambulance",
         )
         .forEach((el) => {
           el.style.opacity = "1";
-          el.style.transform = "none";
         });
     };
   }, []);

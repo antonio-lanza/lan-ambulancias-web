@@ -151,13 +151,7 @@ img[data-nimg="fill"] {
 
 .reveal {
   opacity: 0;
-  transform: translateY(28px);
-  will-change: transform, opacity;
-}
-
-.reveal.is-in {
-  opacity: 1;
-  transform: none;
+  visibility: hidden;
 }
 
 .lan-equipe {
@@ -227,8 +221,7 @@ img[data-nimg="fill"] {
 
   .reveal {
     opacity: 1;
-    transform: none;
-    will-change: auto;
+    visibility: visible;
   }
 
   *,
