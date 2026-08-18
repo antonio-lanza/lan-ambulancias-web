@@ -3,7 +3,7 @@ export const site = {
   legalName: "LAN Ambulâncias",
   tagline: "Atendimento de emergência e remoção em todo Santa Catarina",
   description:
-    "LAN Ambulâncias 24h em Criciúma: remoção de pacientes, UTI móvel, transferência inter-hospitalar, cobertura de eventos e plano Área Protegida em todo Santa Catarina.",
+    "LAN Ambulâncias 24h em Criciúma: remoção de pacientes, UTI móvel, transferência inter-hospitalar, cobertura de eventos e plano Área Protegida em todo Estado de Santa Catarina.",
   url: "https://lanambulancias.com.br",
   locale: "pt_BR",
   seo: {
