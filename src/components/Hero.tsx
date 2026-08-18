@@ -50,16 +50,12 @@ export function Hero() {
       <div className="relative z-10 mx-auto grid max-w-7xl items-start gap-4 px-5 pt-8 pb-20 md:gap-6 md:px-8 md:pt-12 md:pb-20 lg:grid-cols-2 lg:pt-14">
         <div className="flex flex-col items-center pt-8 text-center md:items-center md:pt-24 lg:pt-28">
           <h1 className="js-hero-title font-display text-[2.35rem] leading-[1.08] font-extrabold tracking-[-0.03em] text-white opacity-0 sm:text-[2.85rem] lg:text-[3.35rem]">
-            <span className="mb-2 block text-[0.46em] font-bold tracking-[0.02em] text-white/90 sm:text-[0.44em]">
-              LAN Ambulâncias 24h · Criciúma e Santa Catarina
-            </span>
-            Ambulância e UTI móvel{" "}
-            <span className="text-green">agora</span>!
+            Ambulância <span className="text-green">agora</span>!
           </h1>
 
           <p className="js-hero-sub mt-4 max-w-md text-base leading-relaxed font-semibold text-white/90 opacity-0 md:text-xl">
-            Remoção de pacientes, transferência inter-hospitalar e cobertura de
-            eventos. Atendimento 24 horas em todo o Estado de Santa Catarina.
+            Agilidade, segurança e eficiência. Atendimento em todo o Estado de
+            Santa Catarina.
           </p>
 
           <div className="js-hero-cta mt-5 flex w-full max-w-sm flex-col items-stretch gap-2.5 opacity-0 sm:max-w-none sm:flex-row sm:flex-wrap sm:items-center sm:justify-center">
@@ -86,7 +82,7 @@ export function Hero() {
           <div className="relative w-full max-w-[560px] lg:max-w-[640px]">
             <Image
               src={photos.heroFrente}
-              alt="Ambulância LAN Ambulâncias 24h em Criciúma, Santa Catarina"
+              alt="Ambulância LAN Ambulâncias"
               width={960}
               height={905}
               priority

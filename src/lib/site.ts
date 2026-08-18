@@ -37,7 +37,7 @@ export const site = {
 export const nav = [
   { href: "#servicos", label: "Serviços" },
   { href: "#depoimentos", label: "Depoimentos" },
-  { href: "#faq", label: "FAQ" },
+  { href: "#faq", label: "Dúvidas" },
   { href: "#contato", label: "Contato" },
 ] as const;
 
@@ -91,10 +91,6 @@ export const faqs = [
   {
     q: "Como solicito uma ambulância agora?",
     a: "Ligue para (48) 9 9979-9668 ou fale pelo WhatsApp. A equipe orienta o atendimento imediatamente.",
-  },
-  {
-    q: "A LAN faz cobertura de eventos?",
-    a: "Sim. A LAN cobre eventos de pequeno, médio e grande porte — esportivos, corporativos, shows, festas, formaturas e casamentos em Santa Catarina.",
   },
   {
     q: "A LAN atende fora de Criciúma?",

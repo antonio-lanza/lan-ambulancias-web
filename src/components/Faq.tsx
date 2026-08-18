@@ -3,28 +3,50 @@ import { faqs } from "@/lib/site";
 
 export function Faq() {
   return (
-    <section id="faq" className="bg-white py-20 md:py-24">
+    <section id="faq" className="bg-ice py-16 md:py-24">
       <div className="mx-auto max-w-3xl px-5 md:px-8">
         <Reveal>
-          <p className="font-display text-xs font-bold tracking-[0.24em] text-green-deep uppercase">
-            Perguntas frequentes
-          </p>
-          <h2 className="mt-3 font-display text-3xl font-extrabold tracking-tight text-ink md:text-4xl">
-            Respostas diretas sobre a LAN
-          </h2>
+          <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between md:gap-10">
+            <h2 className="font-display text-3xl font-extrabold tracking-tight text-ink md:text-[2.75rem]">
+              Perguntas frequentes
+            </h2>
+          </div>
+          <div className="mt-6 h-px w-full bg-line" />
         </Reveal>
 
-        <div className="mt-10 space-y-3">
+        <div className="mt-8 space-y-3 md:mt-10">
           {faqs.map((item, i) => (
-            <Reveal key={item.q} delay={i * 0.04}>
-              <details className="group rounded-2xl border border-line bg-ice px-5 py-4 open:bg-white open:shadow-[0_12px_40px_rgba(26,35,48,0.06)]">
-                <summary className="cursor-pointer list-none font-display text-lg font-bold text-ink marker:content-none [&::-webkit-details-marker]:hidden">
-                  <span className="flex items-start justify-between gap-4">
+            <Reveal key={item.q} delay={i * 0.05}>
+              <details
+                className="group overflow-hidden rounded-2xl border border-line bg-white transition-[border-color,box-shadow] open:border-green/35 open:shadow-[0_16px_40px_rgba(5,53,8,0.08)]"
+                open={i === 0}
+              >
+                <summary className="flex cursor-pointer list-none items-start justify-between gap-4 px-5 py-4 marker:content-none [&::-webkit-details-marker]:hidden md:px-6 md:py-5">
+                  <span className="font-display text-base font-bold leading-snug text-ink md:text-lg">
                     {item.q}
-                    <span className="mt-1 text-green transition group-open:rotate-45">+</span>
+                  </span>
+                  <span
+                    className="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-full bg-ice text-green transition group-open:rotate-180 group-open:bg-green/15"
+                    aria-hidden
+                  >
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                    >
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
                   </span>
                 </summary>
-                <p className="mt-3 text-[15px] leading-relaxed text-muted">{item.a}</p>
+                <div className="border-t border-line/80 px-5 pb-5 md:px-6 md:pb-6">
+                  <p className="pt-4 text-[15px] leading-relaxed text-muted">
+                    {item.a}
+                  </p>
+                </div>
               </details>
             </Reveal>
           ))}

@@ -28,4 +28,3 @@
 ## Site
 - URL canônica: https://lanambulancias.com.br
 - Sitemap: https://lanambulancias.com.br/sitemap.xml
-- FAQ: https://lanambulancias.com.br/#faq

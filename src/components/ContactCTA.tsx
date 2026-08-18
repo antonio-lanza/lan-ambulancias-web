@@ -9,7 +9,7 @@ export function ContactCTA() {
       <div className="relative z-10 mx-auto max-w-5xl px-5 text-center md:px-8">
         <Reveal>
           <h2 className="font-display text-[1.85rem] font-black tracking-tight text-black sm:text-3xl md:text-5xl">
-            Precisa de ambulância agora?
+            Precisa de uma ambulância agora?
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-black md:text-lg">
             Fale com a central da LAN Ambulâncias 24h. Atendimento em Criciúma e
