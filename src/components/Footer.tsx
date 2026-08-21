@@ -30,6 +30,9 @@ export function Footer() {
                 <InstagramIcon size={15} />
                 {site.social.instagramHandle}
               </a>
+              <p className="mx-auto mt-3 max-w-[14rem] text-sm leading-snug text-white/55 md:mx-0">
+                {site.address.display}
+              </p>
             </div>
 
             <div className="grid grid-cols-2 gap-x-8 gap-y-6 sm:grid-cols-3 md:gap-x-12">

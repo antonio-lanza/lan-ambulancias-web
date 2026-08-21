@@ -7,6 +7,7 @@
 - Registro: CRM/SC - PJ: 4944
 - Diretor Técnico Médico: Dr. Douglas Gobbo Pierini, CRM/SC 24671
 - Cidade-base: Criciúma, SC, Brasil
+- Endereço: Avenida Centenário, 1730 — Santa Bárbara, Criciúma/SC — CEP 88804-001
 - Área de atendimento: Estado de Santa Catarina
 - Horário: 24 horas, todos os dias
 

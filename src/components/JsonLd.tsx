@@ -29,9 +29,11 @@ export function JsonLd() {
       },
       address: {
         "@type": "PostalAddress",
-        addressLocality: site.city,
-        addressRegion: site.regionCode,
-        addressCountry: site.country,
+        streetAddress: site.address.street,
+        addressLocality: site.address.city,
+        addressRegion: site.address.regionCode,
+        postalCode: site.address.postalCode,
+        addressCountry: site.address.country,
       },
       openingHoursSpecification: {
         "@type": "OpeningHoursSpecification",
