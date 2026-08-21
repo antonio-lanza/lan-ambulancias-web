@@ -4,7 +4,7 @@ export const site = {
   tagline: "Atendimento de emergência e remoção em todo o Estado de Santa Catarina",
   description:
     "LAN Ambulâncias 24h em Criciúma: remoção de pacientes, UTI móvel, transferência inter-hospitalar, cobertura de eventos e plano Área Protegida em todo o Estado de Santa Catarina.",
-  url: "https://lanambulancias.com.br",
+  url: "https://lan-ambulancias.com.br",
   locale: "pt_BR",
   seo: {
     title: "LAN Ambulâncias 24h | Ambulância, remoção e UTI móvel em Criciúma e SC",
@@ -16,7 +16,7 @@ export const site = {
   phoneSecondaryTel: "+554834629255",
   whatsapp: "5548999799668",
   whatsappMessage: "Olá! Preciso de atendimento da LAN Ambulâncias.",
-  email: "contato@lanambulancias.com.br",
+  email: "contato@lan-ambulancias.com.br",
   city: "Criciúma",
   region: "Santa Catarina",
   regionCode: "SC",

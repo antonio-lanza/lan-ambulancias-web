@@ -2,7 +2,7 @@
   "name": "lan-ambulancias-web",
   "version": "1.0.0",
   "private": true,
-  "description": "Site institucional da LAN Ambulâncias 24h — Criciúma e Santa Catarina.",
+  "description": "Site institucional da LAN Ambulâncias 24h — https://lan-ambulancias.com.br",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

@@ -14,7 +14,7 @@
 - Telefone principal: (48) 9 9979-9668
 - Telefone secundário: (48) 3462-9255
 - WhatsApp: (48) 9 9979-9668
-- E-mail: contato@lanambulancias.com.br
+- E-mail: contato@lan-ambulancias.com.br
 - Instagram: https://www.instagram.com/lanambulancias/
 
 ## Serviços
@@ -26,5 +26,5 @@
 - Locação de ambulâncias (diária, mensal ou anual)
 
 ## Site
-- URL canônica: https://lanambulancias.com.br
-- Sitemap: https://lanambulancias.com.br/sitemap.xml
+- URL canônica: https://lan-ambulancias.com.br
+- Sitemap: https://lan-ambulancias.com.br/sitemap.xml

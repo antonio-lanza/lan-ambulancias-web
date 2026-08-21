@@ -1,6 +1,6 @@
 # LAN Ambulâncias 24h
 
-Site institucional da [LAN Ambulâncias](https://lanambulancias.com.br) — ambulância, remoção de pacientes, UTI móvel e cobertura de eventos em Criciúma e em todo o Estado de Santa Catarina.
+Site institucional da [LAN Ambulâncias](https://lan-ambulancias.com.br) — ambulância, remoção de pacientes, UTI móvel e cobertura de eventos em Criciúma e em todo o Estado de Santa Catarina.
 
 ## Stack
 
@@ -47,7 +47,7 @@ Abra [http://localhost:3000](http://localhost:3000).
 
 Compatível com [Vercel](https://vercel.com/) ou qualquer host que suporte Next.js.
 
-Domínio canônico: `https://lanambulancias.com.br`
+Domínio canônico: `https://lan-ambulancias.com.br`
 
 ## SEO
 
