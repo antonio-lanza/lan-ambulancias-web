@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
+import { brand } from "@/lib/media";
 import { nav, site, whatsappUrl } from "@/lib/site";
 
 export function Header() {
@@ -41,7 +42,7 @@ export function Header() {
           aria-label={site.name}
         >
           <Image
-            src="/brand/lan_logo.png"
+            src={brand.logo}
             alt="LAN Ambulâncias 24h"
             fill
             priority

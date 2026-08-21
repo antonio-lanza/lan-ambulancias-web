@@ -13,7 +13,7 @@ export function ContactCTA() {
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-black md:text-lg">
             Fale com a central da LAN Ambulâncias 24h. Atendimento em Criciúma e
-            em todo Estado de Santa Catarina.
+            em todo o Estado de Santa Catarina.
           </p>
           <div className="mx-auto mt-8 flex w-full max-w-sm flex-col items-stretch gap-3 sm:max-w-none sm:flex-row sm:flex-wrap sm:items-center sm:justify-center">
             <a

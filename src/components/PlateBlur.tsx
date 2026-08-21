@@ -1,7 +1,5 @@
 "use client";
 
-import type { ReactNode } from "react";
-
 export type PlateBlurConfig = {
   x: number;
   y: number;
@@ -37,23 +35,6 @@ export const PLATE_BLURS = {
         feather: 12,
         radius: 0.4,
         scale: 1.04,
-      },
-    ],
-  },
-  fleet: {
-    fit: "contain" as const,
-    position: "top",
-    plates: [
-      {
-        x: 23.5,
-        y: 79.55,
-        width: 16,
-        height: 3.55,
-        rotate: 5,
-        blur: 8,
-        feather: 14,
-        radius: 0.45,
-        scale: 1.03,
       },
     ],
   },
@@ -158,47 +139,9 @@ export const PLATE_BLURS = {
       },
     ],
   },
-  "op-galpao": {
-    fit: "cover" as const,
-    position: "center 48%",
-    plates: [
-      {
-        x: 24,
-        y: 76.5,
-        width: 14,
-        height: 4.2,
-        rotate: 8,
-        blur: 10,
-        feather: 12,
-        radius: 0.4,
-        scale: 1.02,
-      },
-    ],
-  },
-  "op-traseira": {
-    fit: "cover" as const,
-    position: "center 52%",
-    plates: [
-      {
-        x: 37,
-        y: 86.5,
-        width: 26,
-        height: 5,
-        rotate: 0,
-        blur: 10,
-        feather: 12,
-        radius: 0.4,
-        scale: 1.02,
-      },
-    ],
-  },
 } satisfies Record<string, PlateBlurSet>;
 
 export type PlateBlurId = keyof typeof PLATE_BLURS;
-
-export function PlateBlurProvider({ children }: { children: ReactNode }) {
-  return children;
-}
 
 function plateMaskUrl(cfg: PlateBlurConfig) {
   const { x, y, width, height, rotate, feather, radius } = cfg;
@@ -263,18 +206,13 @@ function PlateBlurLayer({ src, config, fit, position }: LayerProps) {
 type Props = {
   src: string;
   blurId?: PlateBlurId;
-  config?: PlateBlurConfig | PlateBlurConfig[];
   fit?: PlateBlurFit;
   position?: string;
 };
 
-export function PlateBlur({ src, blurId, config, fit, position }: Props) {
+export function PlateBlur({ src, blurId, fit, position }: Props) {
   const set = blurId ? PLATE_BLURS[blurId] : undefined;
-  const plates = config
-    ? Array.isArray(config)
-      ? config
-      : [config]
-    : (set?.plates ?? []);
+  const plates = set?.plates ?? [];
 
   const resolvedFit = fit ?? set?.fit ?? "contain";
   const resolvedPos = position ?? set?.position ?? "top";

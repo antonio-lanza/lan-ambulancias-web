@@ -1,7 +1,8 @@
 {
   "name": "lan-ambulancias-web",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "description": "Site institucional da LAN Ambulâncias 24h — Criciúma e Santa Catarina.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -17,7 +18,6 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "@types/animejs": "^3.1.13",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

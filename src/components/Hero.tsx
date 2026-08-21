@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 import { createTimeline } from "animejs";
 import { PlateBlur } from "@/components/PlateBlur";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
-import { brand, photos } from "@/lib/media";
+import { photos } from "@/lib/media";
 import { site, whatsappUrl } from "@/lib/site";
 
 export function Hero() {
@@ -67,11 +67,10 @@ export function Hero() {
               href={whatsappUrl("Olá! Preciso de uma ambulância da LAN agora.")}
               target="_blank"
               rel="noopener noreferrer"
-              style={{ backgroundColor: "#FFFFFF", color: "#1A2330" }}
-              className="inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold no-underline transition hover:bg-ice md:text-base"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-ink no-underline transition hover:bg-ice md:text-base"
             >
               <WhatsAppIcon size={18} className="shrink-0 text-[#25D366]" />
-              <span style={{ color: "#1A2330" }}>WhatsApp 24h</span>
+              WhatsApp 24h
             </a>
           </div>
         </div>
@@ -80,7 +79,7 @@ export function Hero() {
           <div className="relative w-full max-w-[560px] lg:max-w-[640px]">
             <Image
               src={photos.heroFrente}
-              alt="Ambulância LAN Ambulâncias"
+              alt="Ambulância da LAN Ambulâncias"
               width={960}
               height={905}
               priority

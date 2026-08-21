@@ -1,6 +1,6 @@
 # LAN Ambulâncias 24h
 
-> Ambulância, remoção de pacientes, UTI móvel e cobertura de eventos com base em Criciúma e atendimento em todo Santa Catarina.
+> Ambulância, remoção de pacientes, UTI móvel e cobertura de eventos com base em Criciúma e atendimento em todo o Estado de Santa Catarina.
 
 ## Entidade
 - Nome: LAN Ambulâncias 24h

@@ -2,6 +2,7 @@ import Image from "next/image";
 import { InstagramIcon } from "@/components/InstagramIcon";
 import { Reveal } from "@/components/motion/Reveal";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
+import { brand } from "@/lib/media";
 import { nav, site, whatsappUrl } from "@/lib/site";
 
 export function Footer() {
@@ -13,7 +14,7 @@ export function Footer() {
             <div className="shrink-0 text-center md:text-left">
               <div className="relative mx-auto h-8 w-[130px] md:mx-0">
                 <Image
-                  src="/brand/lan_logo.png"
+                  src={brand.logo}
                   alt="LAN Ambulâncias"
                   fill
                   sizes="130px"

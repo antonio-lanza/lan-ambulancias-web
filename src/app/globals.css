@@ -7,20 +7,12 @@
   --forest: #053508;
   --navy: #00489c;
   --navy-deep: #002e80;
-  --navy-soft: #e7eef8;
   --ink: #1a2330;
   --ice: #f4f7f5;
   --white: #ffffff;
   --muted: #5a6673;
   --line: #d5e3da;
-  --wa: #25d366;
-  --shadow: 0 24px 60px rgba(5, 53, 8, 0.22);
-  --radius: 1.25rem;
 
-  /* Equipe desktop
-     bloco = altura da seção
-     foto = tamanho | foto-x = esquerda(-)/direita(+) | foto-y = sobe(-)/desce(+)
-     texto = escala (1 = atual) | texto-x = esquerda(-)/direita(+) | texto-y = sobe(-)/desce(+) */
   --equipe-bloco: 380px;
   --equipe-foto: 700px;
   --equipe-foto-x: 0px;
@@ -32,7 +24,6 @@
 
 @media (max-width: 1023px) {
   :root {
-    /* Equipe mobile — mude só estes */
     --equipe-bloco: 380px;
     --equipe-foto: 430px;
     --equipe-foto-x: -30px;
@@ -50,13 +41,11 @@
   --color-forest: var(--forest);
   --color-navy: var(--navy);
   --color-navy-deep: var(--navy-deep);
-  --color-navy-soft: var(--navy-soft);
   --color-ink: var(--ink);
   --color-ice: var(--ice);
   --color-white: var(--white);
   --color-muted: var(--muted);
   --color-line: var(--line);
-  --color-wa: var(--wa);
   --font-sans: var(--font-body);
   --font-display: var(--font-display);
 }
@@ -133,22 +122,6 @@ img[data-nimg="fill"] {
   font-family: var(--font-display), var(--font-body), system-ui, sans-serif;
 }
 
-.grain {
-  position: relative;
-  isolation: isolate;
-}
-
-.grain::after {
-  content: "";
-  pointer-events: none;
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  opacity: 0.08;
-  mix-blend-mode: overlay;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-}
-
 .reveal {
   opacity: 0;
   visibility: hidden;
@@ -193,28 +166,7 @@ img[data-nimg="fill"] {
   }
 }
 
-.lan-river {
-  animation: lan-river 55s linear infinite;
-}
-
-.lan-river:hover {
-  animation-play-state: paused;
-}
-
-@keyframes lan-river {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-  to {
-    transform: translate3d(-50%, 0, 0);
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .lan-river {
-    animation: none;
-  }
-
   html {
     scroll-behavior: auto;
   }
