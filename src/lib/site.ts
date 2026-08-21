@@ -3,12 +3,12 @@ export const site = {
   legalName: "LAN Ambulâncias",
   tagline: "Atendimento de emergência e remoção em todo o Estado de Santa Catarina",
   description:
-    "LAN Ambulâncias 24h em Criciúma: remoção de pacientes, UTI móvel, transferência inter-hospitalar, cobertura de eventos e plano Área Protegida em todo o Estado de Santa Catarina.",
+    "Ambulância e UTI móvel 24h em Criciúma e Santa Catarina. Remoção, eventos e Área Protegida. Ligue (48) 9 9979-9668.",
   url: "https://lan-ambulancias.com.br",
   locale: "pt_BR",
   seo: {
-    title: "LAN Ambulâncias 24h | Ambulância, remoção e UTI móvel em Criciúma e SC",
-    ogTitle: "LAN Ambulâncias 24h — Ambulância e UTI móvel em Criciúma e SC",
+    title: "LAN Ambulâncias 24h — Ambulância em Criciúma e Santa Catarina",
+    ogTitle: "LAN Ambulâncias 24h — Ambulância em Criciúma e Santa Catarina",
   },
   phoneDisplay: "(48) 9 9979-9668",
   phoneTel: "+5548999799668",
